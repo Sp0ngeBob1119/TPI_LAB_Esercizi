@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.numeri {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 280px;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    font-size: 14px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#ris {
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #212529;
+}
+
+.bottoni {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pulsanti {
+    width: 65px;
+    height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 4px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.pulsanti:hover {
+    background-color: #0056b3;
+}
+
+.pulsanti:active {
+    transform: scale(0.96);
+}
+
+#canc {
+    width: 140px;
+    background-color: #dc3545;
+}
+
+#canc:hover {
+    background-color: #a71d2a;
+}
