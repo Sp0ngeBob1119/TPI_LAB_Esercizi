@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List semplice</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <h2>ToDo List con JavaScript</h2>
+    <input type="text" id="txtDescrizione" placeholder="Inserisci un'attività">
+    <button onclick="aggiungiRiga()">Aggiungi</button>
+    <button onclick="eliminaSelezionati()">Elimina selezionati</button>
+    <button onclick="svuotaTabella()">Svuota tabella</button>
+    <hr>
+    <table border="1" cellpadding="8">
+        <thead><tr><th>Seleziona</th><th>Data e ora</th><th>Descrizione</th></tr></thead>
+        <tbody id="tabellaDati"></tbody>
+    </table>
+</body>
+</html>
