@@ -4,6 +4,10 @@ body {
     background-color: #f4f4f9;
 }
 
+#toDoListTable{
+    border-collapse: collapse;
+}
+
 #toDoListDiv {
     max-width: 800px;
     margin: auto;

@@ -102,8 +102,12 @@ myButton.onclick = function lista() {
 myButtonE.onclick = function elimina() {
     let risposta = confirm("Vuoi procedere con l'eliminazione dell'intera lista?");
     if (risposta) {
+        dati.forEach(function(riga, index) {
+            datiC.push(riga)
+        })
         dati = []; // Svuota l'array
         localStorage.removeItem("dati"); // Rimuove i dati dal localStorage
+        localStorage.setItem("datiC", JSON.stringify(datiC))
         visualizzaTabella(); // Aggiorna la tabella a schermo
         mySel.focus();
     }   
