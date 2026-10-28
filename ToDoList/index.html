@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="toDoListDiv">
+        <h2>Gestione To-Do List</h2>
+
+        <div class="form-group">
+            <label for="txtSel">Categoria:</label>
+            <select id="txtSel">
+                <option value="">Seleziona...</option>
+                <option value="Lavoro">Lavoro</option>
+                <option value="Studio">Studio</option>
+                <option value="Personale">Personale</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="txtTask">Task:</label>
+            <input type="text" id="txtTask" placeholder="Inserisci il task...">
+        </div>
+
+        <div class="form-group">
+            <label for="txtData">Data:</label>
+            <input type="date" id="txtData">
+        </div>
+
+        <div class="form-group">
+            <label for="txtNote">Note:</label>
+            <textarea id="txtNote" placeholder="Inserisci eventuali note..."></textarea>
+        </div>
+
+
+        <div class="form-group">
+            <button id="btGenera">Aggiungi</button>
+            <button id="btElimina">Svuota Lista</button>
+        </div>
+
+
+        <table id="toDoListTable">
+            <thead>
+                <tr>
+                    <th>N°</th>
+                    <th>Categoria</th>
+                    <th>Task</th>
+                    <th>Data</th>
+                    <th>Note</th>
+                    <th>Azioni</th>
+                </tr>
+            </thead>
+            <tbody id="toDoListBody">
+            </tbody>
+        </table>
+    </div>
+
+    
+    <script src="main.js" defer></script>
+</body>
+</html>

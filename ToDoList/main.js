@@ -9,6 +9,7 @@ let myData = document.getElementById("txtData");
 let myNote = document.getElementById("txtNote");
 
 let dati = [];
+let datiC = []
 
 // Caricamento iniziale dal LocalStorage al caricamento della pagina
 window.onload = function() {
@@ -49,8 +50,10 @@ function visualizzaTabella() {
         
         // Eliminazione di una singola riga basata sull'indice dell'array
         btnEliminaSingolo.onclick = function() {
+            datiC.push(dati[index])
             dati.splice(index, 1); // Rimuove l'elemento dall'array
             localStorage.setItem("dati", JSON.stringify(dati)); // Aggiorna il localStorage
+            localStorage.setItem("datiC", JSON.stringify(datiC))
             visualizzaTabella(); // Ridisegna la tabella aggiornata
             mySel.focus();
         };
