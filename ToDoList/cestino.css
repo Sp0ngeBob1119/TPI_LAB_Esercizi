@@ -1,0 +1,92 @@
+body {
+font-family: Arial, sans-serif;
+margin: 20px;
+background-color: #f4f4f9;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+/* Stile Tabella Cestino */
+#toDoListTable {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background-color: white;
+}
+
+#toDoListTable th,
+#toDoListTable td {
+border: 1px solid #ddd;
+padding: 10px;
+text-align: left;
+}
+
+#toDoListTable th {
+background-color: #007BFF;
+color: white;
+}
+
+#toDoListTable tr:nth-child(even) {
+background-color: #f9f9f9;
+}
+
+/* Stile Base Pulsanti Generici */
+button {
+padding: 8px 15px;
+margin-right: 5px;
+cursor: pointer;
+border: none;
+border-radius: 4px;
+font-weight: bold;
+color: white;
+}
+
+/* Pulsante "Recupera Lista" sotto la tabella */
+#btRipristina {
+background-color: #28a745;
+}
+
+#btRipristina:hover {
+background-color: #218838;
+}
+
+/* Pulsante "Svuota Lista" sotto la tabella */
+#btElimina {
+background-color: #dc3545;
+}
+
+#btElimina:hover {
+background-color: #c82333;
+}
+
+/* --- Pulsanti dentro le righe della tabella --- */
+
+/* Bottone V (Recupero singola riga) */
+#toDoListBody button.btn-success,
+#toDoListBody td:last-child button {
+background-color: #28a745;
+color: white;
+padding: 4px 10px;
+border-radius: 3px;
+}
+
+#toDoListBody button.btn-success:hover,
+#toDoListBody td:last-child button:hover {
+background-color: #218838;
+}
+
+/* Bottone X (Eliminazione singola riga) */
+#toDoListBody button.btn-danger,
+#toDoListBody td:nth-last-child(2) button {
+background-color: #dc3545;
+color: white;
+padding: 4px 10px;
+border-radius: 3px;
+}
+
+#toDoListBody button.btn-danger:hover,
+#toDoListBody td:nth-last-child(2) button:hover {
+background-color: #c82333;
+}
