@@ -7,6 +7,7 @@ let myTask = document.getElementById("txtTask");
 let mySel = document.getElementById("txtSel");
 let myData = document.getElementById("txtData");
 let myNote = document.getElementById("txtNote");
+let btnCestino = document.getElementById("btnCambiaPagina")
 
 let dati = [];
 let datiC = []
@@ -15,7 +16,11 @@ let datiC = []
 window.onload = function() {
     dati = JSON.parse(localStorage.getItem("dati")) || [];
     visualizzaTabella();
-};
+}
+
+btnCestino.onclick=function(){
+    window.location.href="cestino.html"
+}
 
 // Funzione centrale per disegnare la tabella basandosi sull'array dati
 function visualizzaTabella() {
@@ -108,6 +113,7 @@ myButtonE.onclick = function elimina() {
         dati = []; // Svuota l'array
         localStorage.removeItem("dati"); // Rimuove i dati dal localStorage
         localStorage.setItem("datiC", JSON.stringify(datiC))
+        datiC=[]
         visualizzaTabella(); // Aggiorna la tabella a schermo
         mySel.focus();
     }   

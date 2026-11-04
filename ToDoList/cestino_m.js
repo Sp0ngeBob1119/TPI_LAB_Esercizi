@@ -3,6 +3,7 @@ let myButtonE = document.getElementById("btElimina");
 let myList = document.getElementById("toDoListDiv");
 let mytable = document.getElementById("toDoListTable");
 let myTbody = document.getElementById("toDoListBody");
+let btnList = document.getElementById("btnCambiaPagina")
 
 let datiC = []
 let dati=[]
@@ -12,6 +13,10 @@ window.onload = function() {
     datiC = JSON.parse(localStorage.getItem("datiC")) || [];
     visualizzaTabella();
 };
+
+btnList.onclick = function(){
+    window.location.href="index.html"
+}
 
 // Funzione centrale per disegnare la tabella basandosi sull'array dati
 function visualizzaTabella() {
@@ -43,7 +48,6 @@ function visualizzaTabella() {
         let tdAzioni = document.createElement("td");
         let btnEliminaSingolo = document.createElement("button");
         btnEliminaSingolo.innerHTML = "X";
-        btnEliminaSingolo.className = 'btn-danger';
         
         // Eliminazione di una singola riga basata sull'indice dell'array
         btnEliminaSingolo.onclick = function() {
@@ -60,7 +64,6 @@ function visualizzaTabella() {
         let tdAzioniR = document.createElement("td");
         let btnRecuperoSingolo = document.createElement("button");
         btnRecuperoSingolo.innerHTML = "V";
-        btnRecuperaSingolo.className = 'btn-success';
         
         // Eliminazione di una singola riga basata sull'indice dell'array
         btnRecuperoSingolo.onclick = function() {

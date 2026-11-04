@@ -74,6 +74,8 @@ button {
     border: none;
     border-radius: 4px;
     font-weight: bold;
+    background-color: goldenrod;
+    color: white;
 }
 
 #btGenera {
