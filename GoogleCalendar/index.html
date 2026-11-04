@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Inserimento evento</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h1>Nuovo evento</h1>
+
+  <form id="formEvento">
+    <p>
+      <label>
+        Titolo:
+        <input type="text" id="titolo" required>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Inizio:
+        <input type="datetime-local" id="inizio" required>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Fine:
+        <input type="datetime-local" id="fine" required>
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Luogo:
+        <input type="text" id="luogo">
+      </label>
+    </p>
+
+    <p>
+      <label>
+        Descrizione:
+        <textarea id="descrizione"></textarea>
+      </label>
+    </p>
+
+    <button type="submit">Aggiungi a Google Calendar</button>
+  </form>
+</body>
+</html>

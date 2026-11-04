@@ -8,6 +8,7 @@ let mySel = document.getElementById("txtSel");
 let myData = document.getElementById("txtData");
 let myNote = document.getElementById("txtNote");
 let btnCestino = document.getElementById("btnCambiaPagina")
+let myFreq = document.getElementById("txtFrequenza")
 
 let dati = [];
 let datiC = []
@@ -42,7 +43,9 @@ function visualizzaTabella() {
         myTr.appendChild(tdTask);
 
         let tdData = document.createElement("td");
-        tdData.innerHTML = riga.Cdata;
+        tdData.innerHTML = riga.Cdata
+        if(riga.data=="")
+            tdData.innerHTML = riga.Cfreq
         myTr.appendChild(tdData);
 
         let tdNote = document.createElement("td");
@@ -75,6 +78,7 @@ myButton.onclick = function lista() {
     let task = myTask.value.trim();
     let sel = mySel.value;
     let data = myData.value;
+    let freq = myFreq.value;
     let note = myNote.value.trim();
 
     if (task === "" && sel === "") {
@@ -87,6 +91,7 @@ myButton.onclick = function lista() {
         Ctask: task,
         Csel: sel,
         Cdata: data,
+        Cfreq: freq,
         Cnote: note
     });
 
@@ -99,6 +104,7 @@ myButton.onclick = function lista() {
     myTask.value = "";
     mySel.value = "";
     myData.value = "";
+    myFreq.value = ""
     myNote.value = "";
     mySel.focus();
 };
