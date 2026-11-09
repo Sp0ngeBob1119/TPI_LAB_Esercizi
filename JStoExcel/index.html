@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Esportazione Excel</title>
+</head>
+<body>
+
+  <table id="tabellaDati" border="1">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Cognome</th>
+        <th>Ore</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mario</td>
+        <td>Rossi</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Anna</td>
+        <td>Verdi</td>
+        <td>6</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button id="btnEsporta" type="button">Esporta in Excel</button>
+
+  <!-- Libreria SheetJS -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+
+  <!-- Script dell'applicazione -->
+  <script src="main.js"></script>
+
+</body>
+</html>

@@ -48,6 +48,10 @@ function visualizzaTabella() {
             tdData.innerHTML = riga.Cfreq
         myTr.appendChild(tdData);
 
+        let tdFrequenza = document.createElement("td");
+        tdFrequenza.innerHTML = riga.Cfreq;
+        myTr.appendChild(tdFrequenza);
+
         let tdNote = document.createElement("td");
         tdNote.innerHTML = riga.Cnote;
         myTr.appendChild(tdNote);
