@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Esportazione tabella in PDF</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.8.2/jspdf.plugin.autotable.min.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <h1>Elenco persone</h1>
+  <table id="tabellaDati" border="1">
+    <thead>
+      <tr><th>Nome</th><th>Cognome</th><th>Indirizzo</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Mario</td><td>Rossi</td><td>Via Roma 10</td></tr>
+      <tr><td>Anna</td><td>Bianchi</td><td>Via Milano 25</td></tr>
+    </tbody>
+  </table>
+  <p>
+    <label for="orientamento">Orientamento:</label>
+    <select id="orientamento">
+      <option value="landscape">Orizzontale</option>
+      <option value="portrait">Verticale</option>
+    </select>
+    <button id="btnEsporta" type="button">Esporta PDF</button>
+  </p>
+  <p>È necessaria una connessione Internet per caricare le librerie.</p>
+</body>
+</html>
